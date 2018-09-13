@@ -12,5 +12,15 @@ public class HitungFibonacci {
        String identitas = "SYERLI TRINADYA / XRPL 2 / 33";
        
        tampilJudul(identitas);
+       int n = tampilInput();
+       
    } 
+   private static int tampilInput() {
+       Scanner scanner = new Scanner(System.in);
+       
+        System.out.println("Bilangan ke-: ");
+        int  n = scanner.nextInt();
+        
+        return n;
+   }
 }
