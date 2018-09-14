@@ -12,6 +12,16 @@ public class Tugas01 {
         System.out.print("Masukkan jumlah uang : ");
         uang = scan.nextInt();
         
+        
 
+        for (i = 0;i < n; i++) 
+        {
+            jumlah = uang/nominal[i];
+            uang = uang - (nominal[i]*jumlah);
+            
+            System.out.println("lembar" +nominal[i] + "=" + jumlah);
+        }
     }
+
+    
 }
